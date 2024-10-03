@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="14dp"
+    android:orientation="vertical"
+    tools:context=".presentation.DetailsFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_marginTop="24dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+       <androidx.appcompat.widget.AppCompatImageButton
+           android:id="@+id/icon_star"
+           android:layout_width="32dp"
+           android:layout_height="32dp"
+           android:background="@color/white"
+           android:layout_gravity="end"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:src="@drawable/baseline_star_border_24"
+           >
+
+       </androidx.appcompat.widget.AppCompatImageButton>
+
+    </FrameLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        style="@style/TextTitleDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/title">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text"
+        style="@style/TextDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/text">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/ButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#EFEFF0"
+        android:drawableLeft="@drawable/baseline_location_on_24"
+        android:paddingHorizontal="116dp"
+        android:text="@string/button"
+        android:textColor="@color/black"
+        app:cornerRadius="8dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+</LinearLayout>
